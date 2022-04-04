@@ -9,4 +9,4 @@ metadata:
     app.kubernetes.io/managed-by: {{ .Release.Service }}
 data:
   {{ (.Files.Glob "config-repo/*").AsConfig | indent 2 }}
-{{- end -}}
+  {{- end -}}
