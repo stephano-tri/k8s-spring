@@ -1,7 +1,7 @@
 fullnameOverride: model
 
 image:
-  name: model-service
+  name: model
   pullPolicy: Never
 
 
