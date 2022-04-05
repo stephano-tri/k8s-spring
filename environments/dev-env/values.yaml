@@ -11,10 +11,10 @@ secrets:
 
 mysql:
   env:
-    MYSQL_ROOT_PASSWORD: rootpwd
-    MYSQL_DATABASE: review-db
-    MYSQL_USER: user
-    MYSQL_PASSWORD: pwd
+    MYSQL_ROOT_PASSWORD: write
+    MYSQL_DATABASE: own
+    MYSQL_USER: your
+    MYSQL_PASSWORD: mysql profile
 
 config-server:
   envFromSecretRefs:
@@ -24,22 +24,10 @@ gateway:
   envFromSecretRefs:
     - config-client-credentials
 
-auth-server:
+model:
   envFromSecretRefs:
     - config-client-credentials
 
-product:
-  envFromSecretRefs:
-    - config-client-credentials
-
-recommendation:
-  envFromSecretRefs:
-    - config-client-credentials
-
-review:
-  envFromSecretRefs:
-    - config-client-credentials
-
-product-composite:
+model-management:
   envFromSecretRefs:
     - config-client-credentials
