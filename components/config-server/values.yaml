@@ -2,6 +2,7 @@ fullnameOverride: config-server
 
 image:
   name: config-server
+  pullPolicy: Never
 
 ports:
   - name: http
@@ -31,3 +32,4 @@ service:
       targetPort: http
       protocol: TCP
       name: http
+

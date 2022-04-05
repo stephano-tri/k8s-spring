@@ -2,6 +2,7 @@ fullnameOverride: model-management
 
 image:
   name: model-management
+  pullPolicy: Never
 
 env:
   SPRING_PROFILES_ACTIVE: "docker"
