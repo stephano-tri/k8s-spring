@@ -1,0 +1,11 @@
+fullnameOverride: model-management
+
+image:
+  name: model-management
+
+env:
+  SPRING_PROFILES_ACTIVE: "docker"
+
+livenessProbe_enabled: true
+
+readinessProbe_enabled: true
